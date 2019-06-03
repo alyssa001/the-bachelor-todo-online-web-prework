@@ -25,6 +25,10 @@ def count_contestants_by_hometown(data, hometown)
   data.each do |season_num, contestant|
     contestant.each do |contestant_hash|
       if contestant_hash["hometown"] == hometown
+        counter += 1 
+      end
+    end
+  end 
 end
 
 def get_occupation(data, hometown)
